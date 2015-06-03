@@ -9,8 +9,249 @@
     tools:context="kr.mindwing.camp_exam_weather.MainActivity" >
 
     <TextView
+        android:id="@+id/location_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="40dp"
+        android:text="서울특별시 강남구 신사동"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/weather_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_text"
+        android:layout_marginTop="9dp"
+        android:text="토 오후 1시 대체로 맑음"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/weather_info_text"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/weather_01" />
+
+    <TextView
+        android:id="@+id/main_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_image"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/main_image"
+        android:gravity="center"
+        android:text="25"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/main_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/main_image"
+        android:layout_below="@+id/weather_info_text"
+        android:layout_toRightOf="@id/main_temperature"
+        android:text="°C"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/right_info_rain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/main_image"
+        android:text="강수확률: 0%"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/right_info_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/right_info_rain"
+        android:layout_below="@id/right_info_rain"
+        android:text="습도: 0%"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/right_info_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/right_info_humidity"
+        android:layout_below="@id/right_info_humidity"
+        android:text="풍속: 1m/s"
+        android:textSize="15dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_image"
+        android:layout_below="@+id/main_temperature"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:id="@+id/seekbar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekbar"
+        android:layout_alignRight="@+id/seekbar"
+        android:layout_below="@+id/seekbar"
+        android:gravity="center"
+        android:text="오후 1시, 오후 6시, 오후 11시, 오전 4시, 오전 9시"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:id="@+id/outline_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar_label"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/outline_1_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="월" />
+
+            <ImageView
+                android:id="@+id/outline_1_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_1_text"
+                android:gravity="center"
+                android:src="@drawable/weather_01" />
+
+            <TextView
+                android:id="@+id/outline_1_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_1_image"
+                android:gravity="center"
+                android:text="°C" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/outline_2_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="화" />
+
+            <ImageView
+                android:id="@+id/outline_2_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_2_text"
+                android:gravity="center"
+                android:src="@drawable/weather_02" />
+
+            <TextView
+                android:id="@+id/outline_2_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_2_image"
+                android:gravity="center"
+                android:text="°C" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/outline_3_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="수" />
+
+            <ImageView
+                android:id="@+id/outline_3_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_3_text"
+                android:gravity="center"
+                android:src="@drawable/weather_03" />
+
+            <TextView
+                android:id="@+id/outline_3_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_3_image"
+                android:gravity="center"
+                android:text="°C" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/outline_4_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="목" />
+
+            <ImageView
+                android:id="@+id/outline_4_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_4_text"
+                android:gravity="center"
+                android:src="@drawable/weather_04" />
+
+            <TextView
+                android:id="@+id/outline_4_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_4_image"
+                android:gravity="center"
+                android:text="°C" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/outline_5_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="금" />
+
+            <ImageView
+                android:id="@+id/outline_5_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_5_text"
+                android:gravity="center"
+                android:src="@drawable/weather_05" />
+
+            <TextView
+                android:id="@+id/outline_5_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/outline_5_image"
+                android:gravity="center"
+                android:text="°C" />
+        </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>
