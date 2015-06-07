@@ -1,5 +1,6 @@
 package kr.mindwing.camp_exam_weather;
 
+import kr.mindwing.camp_exam_weather.WeatherUtil.WeatherInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
@@ -24,6 +25,8 @@ public class MainActivity extends ActionBarActivity {
 	private TextView[] tvOutlineText;
 	private ImageView[] ivOutlineImage;
 	private TextView[] tvOutlineTemperature;
+
+	private WeatherInfo weatherInfo;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +62,6 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				tvMainTemperature.setText(Integer.toString(progress));
 			}
 		});
 
@@ -83,5 +85,32 @@ public class MainActivity extends ActionBarActivity {
 		tvOutlineTemperature[2] = (TextView) findViewById(R.id.outline_3_temperature);
 		tvOutlineTemperature[3] = (TextView) findViewById(R.id.outline_4_temperature);
 		tvOutlineTemperature[4] = (TextView) findViewById(R.id.outline_5_temperature);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		weatherInfo = WeatherUtil.getCurrentInfo();
+
+		setCurrentInfos(weatherInfo);
+	}
+
+	private void setCurrentInfos(WeatherInfo weatherInfo) {
+		tvLocation.setText(weatherInfo.location);
+		tvWeatherInfo.setText(weatherInfo.weatherInfo);
+
+		ivMainImage.setImageResource(weatherInfo.mainImage[0]);
+		tvMainTemperature.setText(weatherInfo.mainTemerature[0]);
+
+		tvRain.setText(weatherInfo.rain[0]);
+		tvHumidity.setText(weatherInfo.humidity[0]);
+		tvWind.setText(weatherInfo.wind[0]);
+
+		for (int i = 0; i < 5; ++i) {
+			tvOutlineText[i].setText(weatherInfo.outlineWeek[i]);
+			ivOutlineImage[i].setImageResource(weatherInfo.outlineImage[i]);
+			tvOutlineTemperature[i].setText(weatherInfo.outlineTemperature[i]);
+		}
 	}
 }

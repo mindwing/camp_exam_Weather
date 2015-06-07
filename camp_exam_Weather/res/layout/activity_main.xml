@@ -13,7 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="서울특별시 강남구 신사동"
         android:textSize="20dp" />
 
     <TextView
@@ -22,7 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/location_text"
         android:layout_marginTop="9dp"
-        android:text="토 오후 1시 대체로 맑음"
         android:textSize="15dp" />
 
     <ImageView
@@ -41,7 +39,6 @@
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/main_image"
         android:gravity="center"
-        android:text="25"
         android:textSize="50dp" />
 
     <TextView
@@ -51,7 +48,6 @@
         android:layout_alignTop="@id/main_image"
         android:layout_below="@+id/weather_info_text"
         android:layout_toRightOf="@id/main_temperature"
-        android:text="°C"
         android:textSize="10dp" />
 
     <TextView
@@ -60,7 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@id/main_image"
-        android:text="강수확률: 0%"
         android:textSize="15dp" />
 
     <TextView
@@ -69,7 +64,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/right_info_rain"
         android:layout_below="@id/right_info_rain"
-        android:text="습도: 0%"
         android:textSize="15dp" />
 
     <TextView
@@ -78,7 +72,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/right_info_humidity"
         android:layout_below="@id/right_info_humidity"
-        android:text="풍속: 1m/s"
         android:textSize="15dp" />
 
     <SeekBar
@@ -117,8 +110,7 @@
                 android:id="@+id/outline_1_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="월" />
+                android:gravity="center" />
 
             <ImageView
                 android:id="@+id/outline_1_image"
@@ -133,8 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_1_image"
-                android:gravity="center"
-                android:text="°C" />
+                android:gravity="center" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -146,8 +137,7 @@
                 android:id="@+id/outline_2_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="화" />
+                android:gravity="center" />
 
             <ImageView
                 android:id="@+id/outline_2_image"
@@ -162,8 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_2_image"
-                android:gravity="center"
-                android:text="°C" />
+                android:gravity="center" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -175,8 +164,7 @@
                 android:id="@+id/outline_3_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="수" />
+                android:gravity="center" />
 
             <ImageView
                 android:id="@+id/outline_3_image"
@@ -191,8 +179,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_3_image"
-                android:gravity="center"
-                android:text="°C" />
+                android:gravity="center" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -204,8 +191,7 @@
                 android:id="@+id/outline_4_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="목" />
+                android:gravity="center" />
 
             <ImageView
                 android:id="@+id/outline_4_image"
@@ -220,8 +206,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_4_image"
-                android:gravity="center"
-                android:text="°C" />
+                android:gravity="center" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -233,8 +218,7 @@
                 android:id="@+id/outline_5_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="금" />
+                android:gravity="center" />
 
             <ImageView
                 android:id="@+id/outline_5_image"
@@ -249,8 +233,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_5_image"
-                android:gravity="center"
-                android:text="°C" />
+                android:gravity="center" />
         </RelativeLayout>
     </LinearLayout>
 
