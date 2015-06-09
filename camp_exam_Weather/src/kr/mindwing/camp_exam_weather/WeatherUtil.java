@@ -96,28 +96,28 @@ public class WeatherUtil {
 
 		case 1:
 			weatherInfo.outlineWeek[index] = "화";
-			weatherInfo.outlineImage[0] = R.drawable.weather_07;
+			weatherInfo.outlineImage[1] = R.drawable.weather_07;
 			weatherInfo.outlineTemperature[1] = "27°C";
 
 			break;
 
 		case 2:
 			weatherInfo.outlineWeek[index] = "수";
-			weatherInfo.outlineImage[0] = R.drawable.weather_08;
+			weatherInfo.outlineImage[2] = R.drawable.weather_08;
 			weatherInfo.outlineTemperature[2] = "24°C";
 
 			break;
 
 		case 3:
 			weatherInfo.outlineWeek[index] = "목";
-			weatherInfo.outlineImage[0] = R.drawable.weather_09;
+			weatherInfo.outlineImage[3] = R.drawable.weather_09;
 			weatherInfo.outlineTemperature[3] = "25°C";
 
 			break;
 
 		case 4:
 			weatherInfo.outlineWeek[index] = "금";
-			weatherInfo.outlineImage[0] = R.drawable.weather_10;
+			weatherInfo.outlineImage[4] = R.drawable.weather_10;
 			weatherInfo.outlineTemperature[4] = "24°C";
 
 			break;
