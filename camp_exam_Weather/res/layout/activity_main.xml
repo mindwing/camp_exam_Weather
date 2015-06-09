@@ -48,6 +48,7 @@
         android:layout_alignTop="@id/main_image"
         android:layout_below="@+id/weather_info_text"
         android:layout_toRightOf="@id/main_temperature"
+        android:text="°C"
         android:textSize="10dp" />
 
     <TextView
