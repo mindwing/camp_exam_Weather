@@ -28,8 +28,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_below="@id/weather_info_text"
-        android:layout_marginTop="44dp"
-        android:src="@drawable/weather_01" />
+        android:layout_marginTop="44dp" />
 
     <TextView
         android:id="@+id/main_temperature"
@@ -118,8 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_1_text"
-                android:gravity="center"
-                android:src="@drawable/weather_01" />
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/outline_1_temperature"
@@ -145,8 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_2_text"
-                android:gravity="center"
-                android:src="@drawable/weather_02" />
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/outline_2_temperature"
@@ -172,8 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_3_text"
-                android:gravity="center"
-                android:src="@drawable/weather_03" />
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/outline_3_temperature"
@@ -199,8 +195,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_4_text"
-                android:gravity="center"
-                android:src="@drawable/weather_04" />
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/outline_4_temperature"
@@ -226,8 +221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/outline_5_text"
-                android:gravity="center"
-                android:src="@drawable/weather_05" />
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/outline_5_temperature"
