@@ -62,6 +62,12 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
+				ivMainImage.setImageResource(weatherInfo.mainImage[progress]);
+				tvMainTemperature.setText(weatherInfo.mainTemerature[progress]);
+
+				tvRain.setText(weatherInfo.rain[progress]);
+				tvHumidity.setText(weatherInfo.humidity[progress]);
+				tvWind.setText(weatherInfo.wind[progress]);
 			}
 		});
 
